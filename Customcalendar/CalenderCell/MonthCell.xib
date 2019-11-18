@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="268" id="KGk-i7-Jjw" customClass="MonthCell" customModule="Amyal" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="300"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="299.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a2q-Zi-pcd">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="300"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="P7o-d2-Zy3">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="300"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" tag="300" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RCv-U0-lOw">
+                                        <rect key="frame" x="0.0" y="15" width="320" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jkh-8e-3oa">
+                                        <rect key="frame" x="0.0" y="44" width="320" height="6"/>
+                                        <color key="backgroundColor" red="0.87450980389999999" green="0.87450980389999999" blue="0.87450980389999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="6" id="u16-qJ-HB9"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="jkh-8e-3oa" firstAttribute="top" secondItem="RCv-U0-lOw" secondAttribute="bottom" constant="8" id="1Cc-vq-8jr"/>
+                                    <constraint firstItem="RCv-U0-lOw" firstAttribute="top" secondItem="P7o-d2-Zy3" secondAttribute="top" constant="15" id="Ec8-UN-dYm"/>
+                                    <constraint firstItem="RCv-U0-lOw" firstAttribute="centerX" secondItem="P7o-d2-Zy3" secondAttribute="centerX" id="M3B-4c-BSE"/>
+                                    <constraint firstAttribute="height" constant="300" id="MuF-Qd-Mqm"/>
+                                    <constraint firstItem="jkh-8e-3oa" firstAttribute="leading" secondItem="P7o-d2-Zy3" secondAttribute="leading" id="OvW-bE-A3m"/>
+                                    <constraint firstItem="jkh-8e-3oa" firstAttribute="width" secondItem="P7o-d2-Zy3" secondAttribute="width" id="lQp-oQ-S4i"/>
+                                    <constraint firstAttribute="trailing" secondItem="jkh-8e-3oa" secondAttribute="trailing" id="s0i-K4-NXz"/>
+                                    <constraint firstItem="RCv-U0-lOw" firstAttribute="width" secondItem="P7o-d2-Zy3" secondAttribute="width" id="tlx-Fu-ufB"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="P7o-d2-Zy3" firstAttribute="top" secondItem="a2q-Zi-pcd" secondAttribute="top" id="78G-Qs-vGk"/>
+                            <constraint firstAttribute="trailing" secondItem="P7o-d2-Zy3" secondAttribute="trailing" id="DVC-iG-BcJ"/>
+                            <constraint firstItem="P7o-d2-Zy3" firstAttribute="centerX" secondItem="a2q-Zi-pcd" secondAttribute="centerX" id="SxB-dF-POz"/>
+                            <constraint firstItem="P7o-d2-Zy3" firstAttribute="leading" secondItem="a2q-Zi-pcd" secondAttribute="leading" id="X1y-by-N1R"/>
+                            <constraint firstAttribute="height" secondItem="P7o-d2-Zy3" secondAttribute="height" id="rAr-Ca-GcF"/>
+                            <constraint firstAttribute="bottom" secondItem="P7o-d2-Zy3" secondAttribute="bottom" id="zTR-9E-u2v"/>
+                        </constraints>
+                    </scrollView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="a2q-Zi-pcd" secondAttribute="bottom" constant="-0.5" id="4D3-Ad-1c0"/>
+                    <constraint firstItem="a2q-Zi-pcd" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="WpV-mS-g3y"/>
+                    <constraint firstAttribute="trailing" secondItem="a2q-Zi-pcd" secondAttribute="trailing" id="bQI-vk-ICV"/>
+                    <constraint firstItem="a2q-Zi-pcd" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="edO-cp-jat"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="hgtConstraint" destination="MuF-Qd-Mqm" id="Qjb-En-TjC"/>
+                <outlet property="lblMonthName" destination="RCv-U0-lOw" id="pVS-vc-Pt4"/>
+                <outlet property="scrollContentView" destination="P7o-d2-Zy3" id="HoS-NY-haR"/>
+            </connections>
+            <point key="canvasLocation" x="104" y="107"/>
+        </tableViewCell>
+    </objects>
+</document>

@@ -13,6 +13,12 @@
 		DC970DC523830FDA00B9D4A9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC970DC323830FDA00B9D4A9 /* Main.storyboard */; };
 		DC970DC723830FDB00B9D4A9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC970DC623830FDB00B9D4A9 /* Assets.xcassets */; };
 		DC970DCA23830FDB00B9D4A9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC970DC823830FDB00B9D4A9 /* LaunchScreen.storyboard */; };
+		DC970DD723830FE800B9D4A9 /* AACalandarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC970DD223830FE800B9D4A9 /* AACalandarView.xib */; };
+		DC970DD823830FE800B9D4A9 /* AACalendar.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC970DD423830FE800B9D4A9 /* AACalendar.xcassets */; };
+		DC970DD923830FE800B9D4A9 /* CalenderVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC970DD523830FE800B9D4A9 /* CalenderVC.swift */; };
+		DC970DDA23830FE800B9D4A9 /* AACalendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC970DD623830FE800B9D4A9 /* AACalendar.swift */; };
+		DC970DDE2383103E00B9D4A9 /* MonthCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC970DDC2383103E00B9D4A9 /* MonthCell.xib */; };
+		DC970DDF2383103E00B9D4A9 /* MonthCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC970DDD2383103E00B9D4A9 /* MonthCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +30,12 @@
 		DC970DC623830FDB00B9D4A9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DC970DC923830FDB00B9D4A9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DC970DCB23830FDB00B9D4A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DC970DD223830FE800B9D4A9 /* AACalandarView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AACalandarView.xib; sourceTree = "<group>"; };
+		DC970DD423830FE800B9D4A9 /* AACalendar.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = AACalendar.xcassets; sourceTree = "<group>"; };
+		DC970DD523830FE800B9D4A9 /* CalenderVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalenderVC.swift; sourceTree = "<group>"; };
+		DC970DD623830FE800B9D4A9 /* AACalendar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AACalendar.swift; sourceTree = "<group>"; };
+		DC970DDC2383103E00B9D4A9 /* MonthCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MonthCell.xib; sourceTree = "<group>"; };
+		DC970DDD2383103E00B9D4A9 /* MonthCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MonthCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +68,8 @@
 		DC970DBC23830FDA00B9D4A9 /* Customcalendar */ = {
 			isa = PBXGroup;
 			children = (
+				DC970DDB2383103E00B9D4A9 /* CalenderCell */,
+				DC970DD123830FE800B9D4A9 /* CalenderVC */,
 				DC970DBD23830FDA00B9D4A9 /* AppDelegate.swift */,
 				DC970DBF23830FDA00B9D4A9 /* SceneDelegate.swift */,
 				DC970DC123830FDA00B9D4A9 /* ViewController.swift */,
@@ -65,6 +79,34 @@
 				DC970DCB23830FDB00B9D4A9 /* Info.plist */,
 			);
 			path = Customcalendar;
+			sourceTree = "<group>";
+		};
+		DC970DD123830FE800B9D4A9 /* CalenderVC */ = {
+			isa = PBXGroup;
+			children = (
+				DC970DD223830FE800B9D4A9 /* AACalandarView.xib */,
+				DC970DD323830FE800B9D4A9 /* Images */,
+				DC970DD523830FE800B9D4A9 /* CalenderVC.swift */,
+				DC970DD623830FE800B9D4A9 /* AACalendar.swift */,
+			);
+			path = CalenderVC;
+			sourceTree = "<group>";
+		};
+		DC970DD323830FE800B9D4A9 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				DC970DD423830FE800B9D4A9 /* AACalendar.xcassets */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		DC970DDB2383103E00B9D4A9 /* CalenderCell */ = {
+			isa = PBXGroup;
+			children = (
+				DC970DDC2383103E00B9D4A9 /* MonthCell.xib */,
+				DC970DDD2383103E00B9D4A9 /* MonthCell.swift */,
+			);
+			path = CalenderCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,8 +167,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC970DDE2383103E00B9D4A9 /* MonthCell.xib in Resources */,
 				DC970DCA23830FDB00B9D4A9 /* LaunchScreen.storyboard in Resources */,
+				DC970DD823830FE800B9D4A9 /* AACalendar.xcassets in Resources */,
 				DC970DC723830FDB00B9D4A9 /* Assets.xcassets in Resources */,
+				DC970DD723830FE800B9D4A9 /* AACalandarView.xib in Resources */,
 				DC970DC523830FDA00B9D4A9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -138,9 +183,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC970DDF2383103E00B9D4A9 /* MonthCell.swift in Sources */,
 				DC970DC223830FDA00B9D4A9 /* ViewController.swift in Sources */,
 				DC970DBE23830FDA00B9D4A9 /* AppDelegate.swift in Sources */,
+				DC970DD923830FE800B9D4A9 /* CalenderVC.swift in Sources */,
 				DC970DC023830FDA00B9D4A9 /* SceneDelegate.swift in Sources */,
+				DC970DDA23830FE800B9D4A9 /* AACalendar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
